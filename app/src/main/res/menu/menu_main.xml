@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.play.view.player.videoplayer4k.MainActivity">
+    <item
+        android:id="@+id/action_sync"
+        android:orderInCategory="100"
+        android:title="sync"
+        android:icon="@drawable/ic_sync_black_24dp"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/network_stream"
+        android:icon="@drawable/ic_error_black_24dp"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:title="Network stream" />
+</menu>

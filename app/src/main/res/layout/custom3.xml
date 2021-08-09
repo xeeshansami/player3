@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70sp"
+    android:background="#010338"
+    android:layout_gravity="bottom"
+    android:gravity="center_horizontal"
+    android:padding="0sp">
+
+    <TextView
+        android:id="@+id/text"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="700sp"
+        android:gravity="center"
+        android:background="#010338"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/gif"
+        android:text="Loading Just A Second"/>
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/gif"
+        android:layout_width="70sp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_height="70sp"
+        android:background="@drawable/gif4"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <item android:id="@+id/refresh"
+            android:icon="@drawable/refresh1"
+            android:title="Refresh"></item>
+        <item android:id="@+id/setting"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Setting"></item>
+    <item android:id="@+id/clear"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Clear"></item>
+
+</menu>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:background="@android:color/transparent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical">-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="25dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#000"
+    android:alpha="0.80"
+
+    >
+
+    <TextView
+        android:id="@+id/subtitleHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="top|center"
+        android:paddingBottom="8dp"
+        android:singleLine="true"
+        android:paddingTop="8dp"
+        android:text="Rate Us"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/subtitleHead2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:singleLine="false"
+        android:paddingTop="8dp"
+        android:text="If you like this app"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10sp"
+        android:weightSum="1"
+        android:layout_gravity="center_horizontal"
+
+        >
+
+
+
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.50"
+            android:background="@drawable/my_button_bg_grey"
+            android:fontFamily="sans-serif-medium"
+            android:text="Later"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            />
+
+
+        <Button
+            android:id="@+id/rateUsOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="sans-serif-medium"
+            android:layout_weight="0.50"
+            android:background="@drawable/my_button_bg"
+            android:text="Rate Us"
+            android:layout_marginLeft="10sp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <!--</RelativeLayout>-->

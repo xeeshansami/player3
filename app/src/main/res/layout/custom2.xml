@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="200sp"
+    android:padding="0sp">
+
+    <TextView
+        android:id="@+id/text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_below="@+id/gif"
+        android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:background="#010338"
+        android:textColor="@color/white"
+        android:text="Gathering..."/>
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/gif"
+        android:layout_width="wrap_content"
+        android:layout_height="140sp"
+        android:background="@drawable/gif2"
+        />
+
+</RelativeLayout>

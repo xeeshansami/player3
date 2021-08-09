@@ -1,0 +1,34 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/windowsTvOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/dot"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/windowsTvTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/windowsTvOne"
+        android:text="@string/dot"
+        android:textColor="@android:color/white"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/windowsTvThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/windowsTvTwo"
+        android:text="@string/dot"
+        android:textColor="@android:color/white"
+        android:textSize="40sp" />
+
+</merge>

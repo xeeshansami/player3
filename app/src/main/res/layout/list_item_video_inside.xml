@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--xmlns:card_view="http://schemas.android.com/tools"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:cardUseCompatPadding="true"-->
+        <!--card_view:cardCornerRadius="0dp"-->
+        <!--card_view:cardElevation="0dp"-->
+        <!--android:shape="rectangle"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_marginBottom="0dp">-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/linear_past"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:minHeight="?android:attr/listPreferredItemHeight"
+                    android:orientation="horizontal"
+                    android:id="@+id/linearImage">
+
+                    <ImageView
+                        android:id="@+id/past_icon"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/logo"
+                         />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/last_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-thin"
+                            android:gravity="left"
+                            android:maxLines="2"
+                            android:textStyle="normal|bold"
+                             android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:singleLine="false"
+                            android:text="Hi make this a very long string that wraps at least 4 lines, seriously make it really really long so it gets cut off at the fourth line not joke.  Just do it!"
+                            android:textColor="#FFF"
+
+                              />
+
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:id="@+id/last_text_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="0dp"
+                                android:text="20:10"
+                                android:layout_weight="1"
+                                android:textStyle="normal|bold"
+                                android:textColor="#FFF"
+                                />
+
+
+
+                            <ImageView
+                                android:id="@+id/headPhoneImage"
+                                android:layout_width="70dp"
+                                android:layout_height="15dp"
+                                android:tint="#fff"
+                                android:visibility="visible"
+                                android:src="@mipmap/logo" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    <!--</android.support.v7.widget.CardView>-->
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/sycn"
+        android:icon="@drawable/ic_refresh_white"
+        android:iconTint="@color/white"
+        android:orderInCategory="100"
+        android:title="Sync"
+        app:showAsAction="always"></item>
+
+    <item
+        android:icon="@drawable/ic_filter_list"
+        android:iconTint="@color/white"
+        android:orderInCategory="100"
+        android:title="View"
+        android:visible="false"
+        app:showAsAction="always">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/action_name"
+                    android:orderInCategory="100"
+                    android:title="By Name"></item>
+                <item
+                    android:id="@+id/action_size"
+                    android:orderInCategory="100"
+                    android:title="By Size"></item>
+                <item
+                    android:id="@+id/action_reso"
+                    android:orderInCategory="100"
+                    android:title="By Resolution"
+                    android:visible="false"></item>
+                <item
+                    android:id="@+id/action_date"
+                    android:orderInCategory="100"
+                    android:title="By Date"></item>
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/ic_frame"
+        android:icon="@drawable/ic_grid_white"
+        android:orderInCategory="100"
+        android:title="List"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_setting"
+        android:iconTint="@color/white"
+        android:orderInCategory="100"
+        android:theme="@style/ToolbarColoredBackArrow"
+        android:title="Setting"
+        app:showAsAction="always"></item>
+
+</menu>

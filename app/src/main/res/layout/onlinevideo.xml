@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:background="@android:color/transparent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical">-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="250dp"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="start"
+    android:layout_margin="25dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/subtitleHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:padding="5dp"
+        android:text="Network Stream"
+        android:textColor="@color/Lightblack"
+        android:textSize="24dp"
+        android:textStyle="bold|normal" />
+
+    <TextView
+        android:id="@+id/subtitlesubHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="Please enter a network URL:
+Example:https://www.example.com/video.mkv"
+        android:textColor="@color/Lightblack"
+        android:textSize="14dp" />
+
+
+    <EditText
+        android:id="@+id/gettitlenetwork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/Lightblack" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+
+        <Button
+            android:id="@+id/cancel_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Cancel"
+            android:textColor="@color/Lightblack" />
+
+        <Button
+            android:id="@+id/ok_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Ok"
+            android:textColor="@color/Lightblack" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <!--</RelativeLayout>-->

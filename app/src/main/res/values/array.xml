@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Label ordering must match values -->
+    <array name="hardware_array">
+        <item>Automatic</item>
+        <item>Disable</item>
+        <item>Decoding acceleration</item>
+        <item>Full acceletration</item>
+    </array>
+
+    <array name="hardware_values">
+        <item>Automatic</item>
+        <item>Disable</item>
+        <item>Decoding acceleration</item>
+        <item>Full acceletration</item>
+    </array>
+
+
+        <string-array name="animation_list">
+            <item>@string/windows_like</item>
+            <item>@string/hangout_like</item>
+            <item>@string/left_right</item>
+            <item>@string/four_square_like</item>
+            <item>@string/horizontal_incremental</item>
+        </string-array>
+
+</resources>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.play.view.player.videoplayer4k">
+
+    <uses-sdk tools:overrideLibrary="com.google.vr.widgets.video , com.google.vr.widgets.common,pl.droidsonroids.gif,com.bullhead.equalizer" />
+
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION"
+        tools:ignore="MockLocation,ProtectedPermissions" />
+
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- <uses-permission android:name="android.permission.SET_WALLPAPER" /> -->
+    <!-- <uses-feature android:name="android.hardware.sensor.compass" -->
+    <!-- android:required="true" /> -->
+    <uses-permission
+        android:name="android.permission.INTERNAL_SYSTEM_WINDOW"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name="com.play.view.player.videoplayer4k.AppClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:noHistory="true"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="36133e0f20a184efd7b17f7ca5d01e42b92f41e1" />
+        <meta-data
+            android:name="com.play.view.player.videoplayer4k.GlideConfiguration"
+            android:value="GlideModule" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id" />
+        <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.play.view.player.videoplayer4k.MainActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:parentActivityName="com.play.view.player.videoplayer4k.VideoActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.play.view.player.videoplayer4k.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.play.view.player.videoplayer4k.AudioDetail"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.play.view.player.videoplayer4k.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.play.view.player.videoplayer4k.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.play.view.player.videoplayer4k.VideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.play.view.player.videoplayer4k.Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.play.view.player.videoplayer4k.VideoDetailActivityFliper"
+            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="landscape">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="video/*" />
+                <data android:mimeType="application/x-quicktimeplayer*" />
+                <data android:mimeType="application/x-mpeg" />
+                <data android:mimeType="application/vnd.dvd*" />
+                <data android:mimeType="application/vnd.3gp*" />
+                <data android:mimeType="application/3gpp*" />
+                <data android:mimeType="application/vnd.rn-realmedia*" />
+                <data android:mimeType="application/mp4*" />
+                <data android:mimeType="application/mpeg*" />
+                <data android:mimeType="application/sdp" />
+                <data android:mimeType="application/vnd.wap.mms-message" />
+                <data android:pathPattern=".*mkv" />
+                <data android:pathPattern=".*MKV" />
+                <data android:pathPattern=".*flv" />
+                <data android:pathPattern=".*FLV" />
+                <data android:pathPattern=".*wmv" />
+                <data android:pathPattern=".*WMV" />
+                <data android:pathPattern=".*ts" />
+                <data android:pathPattern=".*TS" />
+                <data android:pathPattern=".*mp4" />
+                <data android:pathPattern=".*MP4" />
+                <data android:pathPattern=".*rm" />
+                <data android:pathPattern=".*RM" />
+                <data android:pathPattern=".*rmvb" />
+                <data android:pathPattern=".*RMVB" />
+                <data android:pathPattern=".*webm" />
+                <data android:pathPattern=".*WEBM" />
+                <data android:pathPattern=".*mov" />
+                <data android:pathPattern=".*MOV" />
+                <data android:pathPattern=".*mpg" />
+                <data android:pathPattern=".*MPG" />
+                <data android:pathPattern=".*vstream" />
+                <data android:pathPattern=".*VSTREAM" />
+                <data android:pathPattern=".*mpeg" />
+                <data android:pathPattern=".*MPEG" />
+                <data android:pathPattern=".*f4v" />
+                <data android:pathPattern=".*F4V" />
+                <data android:pathPattern=".*avi" />
+                <data android:pathPattern=".*AVI" />
+                <data android:pathPattern=".*ogv" />
+                <data android:pathPattern=".*OGV" />
+                <data android:pathPattern=".*dv" />
+                <data android:pathPattern=".*DV" />
+                <data android:pathPattern=".*3gp" />
+                <data android:pathPattern=".*3GP" />
+                <data android:pathPattern=".*3gpp" />
+                <data android:pathPattern=".*3GPP" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.play.view.player.videoplayer4k.CursorUtils.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.play.view.player.videoplayer4k.MainActivity_Front" />
+        <activity
+            android:name="com.play.view.player.videoplayer4k.Main2Activity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.play.view.player.videoplayer4k.VideoActivity" />
+        </activity>
+        <activity
+            android:name="com.play.view.player.videoplayer4k.About"
+            android:parentActivityName="com.play.view.player.videoplayer4k.VideoActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.play.view.player.videoplayer4k.VideoActivity" />
+        </activity>
+
+        <service
+            android:name="com.play.view.player.videoplayer4k.FloatWidgetService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name=".FloatWidgetService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.play.view.player.videoplayer4k.MediaPlayerService"
+            android:enabled="true" />
+        <service
+            android:name="com.play.view.player.videoplayer4k.MediaPlayerServiceVideo"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.play.view.player.videoplayer4k.VideoSearchActivity"
+            android:parentActivityName="com.play.view.player.videoplayer4k.VideoActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.play.view.player.videoplayer4k.VideoActivity" />
+        </activity>
+        <activity
+            android:name="com.play.view.player.videoplayer4k.SettingActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Settings"
+            android:parentActivityName="com.play.view.player.videoplayer4k.VideoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.play.view.player.videoplayer4k.VideoActivity" />
+        </activity>
+        <activity
+            android:name="com.play.view.player.videoplayer4k.Main4Activity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.play.view.player.videoplayer4k.Recent" />
+        <activity
+            android:name="com.play.view.player.videoplayer4k.CursorUtils.SelectedFolderVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.play.view.player.videoplayer4k.AllVideosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.play.view.player.videoplayer4k.VideoFolder"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.play.view.player.videoplayer4k.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

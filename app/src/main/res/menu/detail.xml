@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:panelFullBackground="#000"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--<item android:title="Main"-->
+        <!--android:id="@+id/menus_inside"-->
+        <!--android:orderInCategory="1"-->
+        <!--android:icon="@drawable/ic_more_vert_white_24dp"-->
+        <!--app:showAsAction="always"-->
+        <!--tools:ignore="HardcodedText" />-->
+
+    <item
+        android:id="@+id/menu_eq"
+        android:title="Main"
+        android:icon="@drawable/ic_stat_eq"
+        app:showAsAction="always">
+        <!--<menu>
+
+
+            <item
+                android:id="@+id/subtitlemenu"
+                android:icon="@drawable/ic_subtitles_black_24dp"
+                android:orderInCategory="1"
+                android:title="Subtitle"
+
+              />
+
+            <item
+                android:id="@+id/background_noification"
+                android:checkable="true"
+                android:icon="@drawable/ic_update_black_24dp"
+                android:orderInCategory="2"
+                android:title="Background"
+                android:visible="true"
+                android:checked="false"
+                app:actionViewClass="android.widget.CheckBox"
+                 />
+
+            <item android:id="@+id/refresh"
+                android:orderInCategory="3"
+                android:icon="@drawable/refresh1"
+                android:title="Refresh"></item>
+            <item
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:id="@+id/setting"
+                android:orderInCategory="4"
+                android:title="Setting"/>
+        </menu>-->
+    </item>
+
+    <!--<item android:title="Main2"-->
+        <!--android:icon="@drawable/ic_camera_black_24dp"-->
+        <!--app:showAsAction="always">-->
+        <!--<menu>-->
+
+            <!--<item-->
+                <!--android:id="@+id/background_noification2"-->
+                <!--android:checkable="true"-->
+                <!--android:icon="@drawable/ic_update_black_24dp"-->
+                <!--android:checked="true"-->
+                <!--android:orderInCategory="10"-->
+                <!--android:title="Background"-->
+                <!--android:visible="true"-->
+                <!--app:actionViewClass="android.widget.CheckBox"-->
+                <!--app:showAsAction="never" />-->
+        <!--</menu>-->
+    <!--</item>-->
+</menu>

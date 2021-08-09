@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="#4167B2"
+    android:layout_height="fill_parent"
+
+    tools:context="com.example.sameer.front.MainActivity_Front">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:background="#fff"
+        android:layout_height="60dp"
+        android:weightSum="1"
+        app:elevation="0dp">
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+<RelativeLayout
+    android:id="@+id/rel2"
+    android:layout_below="@+id/toolbar"
+    android:padding="2sp"
+    android:layout_marginTop="50sp"
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="70sp">
+    <Button
+        android:id="@+id/allvideo"
+        android:textColor="#000"
+        android:padding="5sp"
+        android:textStyle="bold"
+        android:background="@drawable/btn1"
+        android:layout_width="250sp"
+        android:layout_height="70sp" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel3"
+        android:layout_below="@+id/rel2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10sp"
+        android:padding="2sp"
+        android:layout_height="70sp">
+    <Button
+        android:id="@+id/videofolder"
+
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:padding="5sp"
+        android:background="@drawable/btn2"
+        android:layout_width="250sp"
+        android:layout_height="70sp" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rel4"
+        android:layout_below="@+id/rel3"
+        android:padding="2sp"
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="70sp">
+
+    <Button
+        android:textColor="#000"
+        android:padding="5sp"
+        android:background="@drawable/btn3"
+        android:layout_width="250sp"
+        android:id="@+id/player"
+        android:textStyle="bold"
+        android:layout_height="70sp" />
+</RelativeLayout>
+    <RelativeLayout
+    android:layout_centerHorizontal="true"
+    android:id="@+id/rel5"
+    android:layout_below="@+id/rel4"
+    android:padding="2sp"
+    android:layout_marginTop="10sp"
+    android:layout_width="wrap_content"
+    android:layout_height="70sp">
+
+    <Button
+        android:textColor="#000"
+        android:padding="5sp"
+        android:background="@drawable/btn4"
+        android:layout_width="250sp"
+        android:id="@+id/recent"
+        android:textStyle="bold"
+        android:layout_height="70sp" />
+</RelativeLayout>
+
+<RelativeLayout
+android:layout_centerHorizontal="true"
+android:id="@+id/rel6"
+android:layout_below="@+id/rel5"
+android:padding="2sp"
+android:layout_marginTop="40sp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+
+<Button
+    android:textColor="#000"
+    android:padding="5sp"
+    android:layout_width="190sp"
+    android:background="@drawable/unnamede"
+    android:id="@+id/rateus"
+    android:textStyle="bold"
+    android:layout_height="50sp" />
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"
+            >
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+</RelativeLayout>
+
+
+</FrameLayout>

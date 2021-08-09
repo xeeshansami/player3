@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.h6ah4i.android.widget.verticalseekbar:verticalseekbar:0.7.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ed09df20409b47d24bca95f3c57acaad/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ed09df20409b47d24bca95f3c57acaad/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/acc8151fa7e05059fed4233df7845956/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/acc8151fa7e05059fed4233df7845956/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/acc8151fa7e05059fed4233df7845956/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.h6ah4i.android.widget.verticalseekbar/verticalseekbar/0.7.0/f2097cff7b821e2a0c3c7702379a1809c5d07fa4/verticalseekbar-0.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

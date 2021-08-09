@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:orientation="vertical"
+     >
+
+
+    <TextView
+        android:id="@+id/Euil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="basic equalizer"
+        android:visibility="gone"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/Lightblack"
+        android:textStyle="bold|normal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbarTrackHorizontal="@color/Lightblack"
+        android:scrollbars="horizontal"
+        android:layout_height="match_parent">
+        <HorizontalScrollView
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/butBass"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner"
+            android:padding="0dp"
+            android:text="Bass Booster"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold|normal" />
+
+        <Button
+            android:id="@+id/buttreble"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner"
+            android:text="Treble"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold|normal" />
+
+
+        <Button
+            android:id="@+id/flat"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner"
+            android:text="Flat"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold|normal" />
+
+
+        <Button
+            android:id="@+id/jazz"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner"
+            android:text="Jazz"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold|normal" />
+
+
+        <Button
+            android:id="@+id/classical"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner"
+            android:text="CLassical"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/rock"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner"
+            android:text="Rock"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold|normal" />
+
+
+        <Button
+            android:id="@+id/pop"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corner"
+            android:text="Pop"
+            android:textColor="@color/white"
+            android:textStyle="bold|normal" />
+
+    </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>

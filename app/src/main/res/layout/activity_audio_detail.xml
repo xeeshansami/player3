@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/thumbin"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_pl_bg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/thumbinname"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="left"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxLines="2"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="0dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Hi make this a very long string that wraps at least 4 lines, seriously make it really really long so it gets cut off at the fourth line not joke.  Just do it!"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/artistthumb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:text="Songs.pk"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!--<Spinner-->
+        <!--android:id="@+id/equalizericon"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+        <!--/>-->
+        <ImageButton
+            android:id="@+id/vol_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:background="@android:color/transparent"
+            android:tint="#003539"
+            android:src="@drawable/ic_volume_up_black_24dp" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/card_image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@+id/volumeLayout"
+        android:scaleType="fitCenter"
+        android:visibility="visible" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/volumeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/volumeseek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="150dip"
+            android:minHeight="150dip"
+            android:visibility="invisible"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/eqaulizerview"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/bgt"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/Euil"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="12dp"-->
+        <!--android:text="basic equalizer"-->
+        <!--android:textAllCaps="true"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textStyle="bold|normal" />-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarTrackHorizontal="@color/Lightblack"
+            android:scrollbars="horizontal">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/butBass"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/corner"
+                        android:backgroundTint="#fff"
+                        android:padding="0dp"
+                        android:text="Bass"
+                        android:textSize="14sp"
+                        android:textStyle="bold|normal" />
+
+                    <Button
+                        android:id="@+id/buttreble"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/corner"
+
+                        android:backgroundTint="#fff"
+                        android:text="Treble"
+                        android:textSize="14sp"
+                        android:textStyle="bold|normal" />
+
+
+                    <Button
+                        android:id="@+id/flat"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/corner"
+                        android:backgroundTint="#fff"
+                        android:text="Flat"
+                        android:textSize="14sp"
+                        android:textStyle="bold|normal" />
+
+
+                    <Button
+                        android:id="@+id/jazz"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+
+                        android:background="@drawable/corner"
+                        android:backgroundTint="#fff"
+                        android:text="Jazz"
+                        android:textSize="14sp"
+                        android:textStyle="bold|normal" />
+
+
+                    <Button
+                        android:id="@+id/classical"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/corner"
+
+                        android:backgroundTint="#fff"
+                        android:text="CLassical"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/rock"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/corner"
+
+                        android:backgroundTint="#fff"
+                        android:text="Rock"
+                        android:textSize="14sp"
+                        android:textStyle="bold|normal" />
+
+
+                    <Button
+                        android:id="@+id/pop"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+
+                        android:background="@drawable/corner"
+                        android:backgroundTint="#fff"
+                        android:text="Pop"
+                        android:textStyle="bold|normal" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:id="@+id/seeking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/runingtime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="00:00"
+                    android:textColor="#000" />
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/textView3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Small Text"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="#000"-->
+                <!--/>-->
+
+                <TextView
+                    android:id="@+id/totaldura"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="2"
+                    android:gravity="end"
+                    android:text="00:00"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:gravity="start"
+            android:orientation="horizontal"
+            tools:ignore="NotSibling">
+
+            <ImageButton
+                android:id="@+id/repeat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:layout_weight="1"
+                android:tint="#003539"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_repeat_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/previous"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:focusable="true"
+                    android:padding="0dp"
+                    android:tint="#003539"
+                    app:srcCompat="@drawable/ic_skip_previous_black_24dp"
+                    tools:ignore="MissingPrefix,VectorDrawableCompat" />
+
+                <ImageButton
+                    android:id="@+id/play_pause"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/corner"
+                    android:drawSelectorOnTop="true"
+                    android:focusable="true"
+                    android:backgroundTint="#003539"
+                    android:padding="0dp"
+                    app:srcCompat="@drawable/ic_play_arrow_white_24dp"
+                    tools:ignore="MissingPrefix,VectorDrawableCompat" />
+
+                <ImageButton
+                    android:id="@+id/next"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/transparent"
+                    android:focusable="true"
+                    android:padding="0dp"
+                    android:tint="#003539"
+                    app:srcCompat="@drawable/ic_skip_next_black_24dp"
+                    tools:ignore="MissingPrefix,VectorDrawableCompat" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/suffle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|end"
+                android:layout_weight="1"
+                android:tint="#003539"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_shuffle_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:id="@+id/rel"--><!--android:background="#eee"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical">-->
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="63dp"--><!--android:orientation="horizontal">-->
+
+
+    <!--<ImageView--><!--android:id="@+id/thumbin"--><!--android:layout_width="60dp"--><!--android:padding="6dp"--><!--android:src="@drawable/head"--><!--android:layout_height="match_parent"--><!--android:gravity="center_vertical|left"--><!--android:scaleType="centerInside"--><!--/>-->
+
+    <!--<LinearLayout--><!--android:layout_width="0dp"--><!--android:layout_weight="1"--><!--android:layout_gravity="center_vertical"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
+
+    <!--<TextView--><!--android:id="@+id/thumbinname"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:maxLines="1"--><!--android:paddingLeft="10dp"--><!--android:text="Songs.pk"--><!--android:textSize="14sp" />-->
+
+    <!--<TextView--><!--android:id="@+id/artistthumb"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:maxLines="1"--><!--android:paddingLeft="10dp"--><!--android:text="Songs.pk"--><!--android:textSize="12sp" />--><!--</LinearLayout>-->
+
+
+    <!--<TextView--><!--android:layout_width="10dp"--><!--android:layout_height="wrap_content"--><!--android:ellipsize="marquee"--><!--android:focusable="true"--><!--android:focusableInTouchMode="true"--><!--android:fontFamily="sans-serif-thin"--><!--android:gravity="left"--><!--android:marqueeRepeatLimit="marquee_forever"--><!--android:maxLines="2"--><!--android:paddingBottom="5dp"--><!--android:paddingLeft="10dp"--><!--android:paddingRight="10dp"--><!--android:paddingTop="10dp"--><!--android:scrollHorizontally="true"--><!--android:singleLine="true"--><!--android:text="Hi make this a very long string that wraps at least 4 lines, seriously make it really really long so it gets cut off at the fourth line not joke.  Just do it!"--><!--android:textColor="#000"--><!--android:textSize="17sp"--><!--android:textStyle="normal|bold" />--><!--</LinearLayout>-->
+
+    <!--<ImageView--><!--android:id="@+id/card_image"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_gravity="center"--><!--android:layout_weight="1"--><!--android:background="@color/white"--><!--android:scaleType="fitCenter"--><!--android:src="@drawable/head" />-->
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:id="@+id/lin"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@id/rel"--><!--android:background="@android:color/white"--><!--android:orientation="horizontal"--><!--tools:ignore="NotSibling">-->
+
+
+    <!--<ImageButton--><!--android:id="@+id/repeat"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:layout_marginLeft="25dp"--><!--android:background="@android:color/transparent"--><!--app:srcCompat="@drawable/ic_repeat_black_24dp"--><!--tools:ignore="VectorDrawableCompat" />-->
+
+    <!--<LinearLayout--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="55dp"--><!--android:orientation="horizontal">-->
+
+    <!--<ImageButton--><!--android:id="@+id/button4"--><!--android:layout_width="40dp"--><!--android:layout_height="30dp"--><!--android:layout_alignLeft="@+id/button2"--><!--android:layout_alignStart="@+id/button2"--><!--android:layout_alignTop="@+id/button2"--><!--android:layout_gravity="center"--><!--android:layout_margin="5dp"--><!--android:background="@android:color/transparent"--><!--android:focusable="true"--><!--android:padding="0dp"--><!--app:srcCompat="@drawable/ic_skip_previous_black_24dp"--><!--tools:ignore="MissingPrefix,VectorDrawableCompat" />-->
+
+    <!--<ImageButton--><!--android:id="@+id/button3"--><!--android:layout_width="50dp"--><!--android:layout_height="50dp"--><!--android:layout_alignTop="@+id/button4"--><!--android:layout_centerHorizontal="true"--><!--android:layout_margin="10dp"--><!--android:background="@drawable/corner"--><!--android:drawSelectorOnTop="true"--><!--android:focusable="true"--><!--android:padding="0dp"--><!--app:srcCompat="@drawable/ic_play_arrow_white_24dp"--><!--tools:ignore="MissingPrefix,VectorDrawableCompat" />-->
+
+    <!--<ImageButton--><!--android:id="@+id/button"--><!--android:layout_width="40dp"--><!--android:layout_height="30dp"--><!--android:layout_alignTop="@+id/button3"--><!--android:layout_gravity="center"--><!--android:layout_margin="5dp"--><!--android:layout_toEndOf="@+id/textView4"--><!--android:layout_toRightOf="@+id/textView4"--><!--android:background="@android:color/transparent"--><!--android:focusable="true"--><!--android:padding="0dp"--><!--app:srcCompat="@drawable/ic_skip_next_black_24dp"--><!--tools:ignore="MissingPrefix,VectorDrawableCompat" />--><!--</LinearLayout>--><!--<ImageButton--><!--android:id="@+id/suffle"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:layout_marginLeft="50dp"--><!--android:background="@android:color/transparent"--><!--app:srcCompat="@drawable/ic_shuffle_black_24dp"--><!--tools:ignore="VectorDrawableCompat" />--><!--</LinearLayout>-->
+
+
+    <!--<LinearLayout--><!--android:id="@+id/linearImage"--><!--android:layout_width="match_parent"--><!--android:layout_height="40dp"--><!--android:background="#eee"--><!--android:minHeight="?android:attr/listPreferredItemHeight"--><!--android:orientation="horizontal">-->
+
+    <!--<TextView--><!--android:id="@+id/last_text"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:ellipsize="marquee"--><!--android:focusable="true"--><!--android:focusableInTouchMode="true"--><!--android:fontFamily="sans-serif-thin"--><!--android:gravity="left"--><!--android:marqueeRepeatLimit="marquee_forever"--><!--android:maxLines="2"--><!--android:paddingBottom="5dp"--><!--android:paddingLeft="10dp"--><!--android:paddingRight="10dp"--><!--android:paddingTop="10dp"--><!--android:scrollHorizontally="true"--><!--android:singleLine="true"--><!--android:text="Hi make this a very long string that wraps at least 4 lines, seriously make it really really long so it gets cut off at the fourth line not joke.  Just do it!"--><!--android:textColor="#000"--><!--android:textSize="17sp"--><!--android:textStyle="normal|bold" />-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_above="@+id/lin"--><!--android:layout_alignParentBottom="true"--><!--android:gravity="center"--><!--android:orientation="vertical"--><!--tools:ignore="NotSibling">-->
+
+    <!--<SeekBar--><!--android:id="@+id/seekBar"--><!--android:layout_width="350dp"--><!--android:theme="@style/SeekTheme"--><!--android:layout_height="wrap_content"--><!--android:layout_above="@+id/button"--><!--android:layout_alignParentLeft="true"--><!--android:layout_alignParentStart="true"--><!--android:layout_marginBottom="10dp"--><!--android:layout_marginTop="10dp"--><!--android:backgroundTint="@color/white"--><!--android:foregroundTint="@color/white" />-->
+
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="horizontal">-->
+
+    <!--<TextView--><!--android:id="@+id/runingtime"--><!--android:layout_width="0dp"--><!--android:layout_height="wrap_content"--><!--android:layout_centerHorizontal="true"--><!--android:layout_gravity="center"--><!--android:layout_weight="1"--><!--android:gravity="center"--><!--android:text="Small text"--><!--android:textColor="#fff" />-->
+
+
+    <!--<TextView--><!--android:id="@+id/textView3"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center"--><!--android:layout_weight="1"--><!--android:gravity="center"--><!--android:text="Small Text"--><!--android:textAppearance="?android:attr/textAppearanceSmall"--><!--android:textColor="#fff"-->
+
+
+    <!--/>-->
+
+    <!--<TextView--><!--android:id="@+id/textView2"--><!--android:layout_width="0dp"--><!--android:layout_height="wrap_content"--><!--android:layout_centerHorizontal="true"--><!--android:layout_gravity="center"--><!--android:layout_weight="1"--><!--android:gravity="center"--><!--android:text="Small text"--><!--android:textColor="#fff" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->

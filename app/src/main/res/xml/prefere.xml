@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--<PreferenceCategory-->
+        <!--android:title="First Category"-->
+        <!--android:textSize="0px"-->
+        <!--android:layout="@layout/mylayout">-->
+
+        <!--<CheckBoxPreference-->
+            <!--android:title="Checkbox Preference"-->
+            <!--android:defaultValue="false"-->
+            <!--android:summary="This preference can be true or false"-->
+            <!--android:key="checkboxPref"-->
+            <!--android:layout="@layout/mylayout"/>-->
+
+    <!--</PreferenceCategory>-->
+<!--</PreferenceScreen>-->
+<PreferenceScreen
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+ >
+    <PreferenceCategory
+        android:title="GENERAL">
+    <Preference
+        android:key="@string/language_key"
+        android:summary="System Default Language"
+        android:title="Language">
+    </Preference>
+    <!--<ListPreference-->
+        <!--android:summary="@string/hardware_summary"-->
+        <!--android:title="Hardware Acceleration"-->
+         <!--android:entries="@array/hardware_array"-->
+        <!--android:entryValues="@array/hardware_values"-->
+        <!--android:key="@string/hardware_key">-->
+    <!--</ListPreference>-->
+        <!--<CheckBoxPreference-->
+            <!--android:key="checkhidden"-->
+            <!--android:visibility="gone"-->
+            <!--android:summary="Show hidden folders and files"-->
+            <!--android:title="Show hidden folders and files"/>-->
+        </PreferenceCategory>
+
+    <PreferenceCategory
+        android:singleLineTitle="true"
+        android:widgetLayout="@color/Lightblack"
+        android:title="CONTROLS">
+        <CheckBoxPreference
+            android:key="checkbox1"
+            android:defaultValue="true"
+            android:summary="Use gesture to adjust the video position"
+            android:title="Seek Position"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="checkbox2"
+            android:summary="Use gesture to adjust the volume"
+            android:title="Volume"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="checkbox3"
+            android:summary="Use gesture to adjust the brightness"
+            android:title="Brightness"/>
+        <!--<SwitchPreferenceCompat-->
+            <!--android:defaultValue="@string/auto_scan_boolean"-->
+            <!--android:key="@string/auto_scan_key"-->
+            <!--android:summary="@string/auto_scan"-->
+            <!--android:title="Auto Re-Scan"></SwitchPreferenceCompat>-->
+        <!--<SwitchPreferenceCompat-->
+            <!--android:defaultValue="@string/clear_cache_boolean"-->
+            <!--android:key="@string/clear_cache_key"-->
+            <!--android:summary="Clear all activity images cache"-->
+            <!--android:title="Cache Thumbnail"></SwitchPreferenceCompat>-->
+
+    </PreferenceCategory>
+    <!--<PreferenceCategory android:title="SUBTITLES">-->
+        <!--<CheckBoxPreference-->
+            <!--android:key="checksub"-->
+            <!--android:summary="Show subtitles from external files on view startup"-->
+            <!--android:title="Enable subtitles"/>-->
+        <!--<CheckBoxPreference-->
+            <!--android:key="checkemb"-->
+            <!--android:summary="Show subtitles embedded in the view file"-->
+            <!--android:title="Enable embedded subtitles"/>-->
+
+    <!--</PreferenceCategory>-->
+
+    <PreferenceCategory android:title="Action">
+        <Preference
+            android:key="@string/quit_key"
+            android:summary="Exit your Application"
+            android:title="Quit">
+        </Preference>
+
+        <!--<Preference-->
+            <!--android:key="@string/reset_key"-->
+            <!--android:summary="Reset options to default"-->
+            <!--android:title="Reset">-->
+        <!--</Preference>-->
+    </PreferenceCategory>
+    <PreferenceCategory android:title="INFO">
+        <Preference
+            android:key="privacy"
+            android:summary="Application Privacy Policy"
+            android:title="Privacy Policy">
+        </Preference>
+        <Preference
+            android:key="@string/language_key"
+            android:summary="1.0"
+            android:title="Version">
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
