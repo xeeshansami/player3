@@ -1,15 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.gms:play-services-ads:17.2.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/83336f37b125c957c299377d9ee927f9/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/83336f37b125c957c299377d9ee927f9/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bdb4f4b4922031aa40088394a9c415b4/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bdb4f4b4922031aa40088394a9c415b4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bdb4f4b4922031aa40088394a9c415b4/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bdb4f4b4922031aa40088394a9c415b4/AndroidManifest.xml" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-ads/17.2.1/b884044d2f8732260837f470f4ed231a876cb2e3/play-services-ads-17.2.1-javadoc.jar!/" />
-    </JAVADOC>
+    <JAVADOC />
     <SOURCES />
   </library>
 </component>

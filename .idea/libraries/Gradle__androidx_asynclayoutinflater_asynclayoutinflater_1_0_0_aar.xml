@@ -1,15 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.asynclayoutinflater:asynclayoutinflater:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f632807ce1f1b4fea65deb0477ed2775/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f632807ce1f1b4fea65deb0477ed2775/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0ceac99012b3c211019ca098def78275/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0ceac99012b3c211019ca098def78275/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0ceac99012b3c211019ca098def78275/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0ceac99012b3c211019ca098def78275/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0ceac99012b3c211019ca098def78275/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.asynclayoutinflater/asynclayoutinflater/1.0.0/ac4d50701fce5c88dcc514f58e695cd32f05134c/asynclayoutinflater-1.0.0-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

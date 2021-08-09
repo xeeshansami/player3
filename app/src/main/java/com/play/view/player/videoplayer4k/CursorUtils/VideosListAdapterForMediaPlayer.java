@@ -1,13 +1,18 @@
 package com.play.view.player.videoplayer4k.CursorUtils;
 
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
+
+import android.provider.MediaStore;
 import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -166,24 +171,12 @@ public class VideosListAdapterForMediaPlayer extends RecyclerView.Adapter<Videos
             this.videoSong = this.videos.get(position);
             videoViewHolder.tvTitle.setText(video.getTitle());
             Uri videoUri = ExtractThumbUtility.getVideoContentUri(this.context, new File(video.getData()));
-            VideoAndView container = new VideoAndView();
-            container.uri = videoUri;
-            container.imageView = videoViewHolder.ivVideoThumbnail;
-            if (videoViewHolder.asyncLoadThumbs == null)
-
-            {
-                videoViewHolder.asyncLoadThumbs = new AsyncLoadThumbs();
-            } else
-
-            {
-                videoViewHolder.asyncLoadThumbs.cancel(true);
-                videoViewHolder.asyncLoadThumbs = new AsyncLoadThumbs();
-            }
-            videoViewHolder.asyncLoadThumbs.execute(new VideoAndView[]
-
-                    {
-                            container
-                    });
+            int id = Integer.parseInt(videoUri.toString().substring(videoUri.toString().lastIndexOf("/")+1));
+            ContentResolver crThumb = this.context.getContentResolver();
+            BitmapFactory.Options options=new BitmapFactory.Options();
+            options.inSampleSize = 1;
+            Bitmap curThumb = MediaStore.Video.Thumbnails.getThumbnail(crThumb, id, MediaStore.Video.Thumbnails.MICRO_KIND, options);
+            videoViewHolder.ivVideoThumbnail.setImageBitmap(curThumb);
             if (this.selectedItems.get(position, false))
 
             {

@@ -1,11 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.vr:sdk-videowidget:1.40.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eeb9ab9f125cad2c7f156bdc5b5dac78/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eeb9ab9f125cad2c7f156bdc5b5dac78/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aaa0edf2ce011ed33895412bbddd9053/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aaa0edf2ce011ed33895412bbddd9053/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aaa0edf2ce011ed33895412bbddd9053/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aaa0edf2ce011ed33895412bbddd9053/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
