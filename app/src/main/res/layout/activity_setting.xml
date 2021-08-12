@@ -24,7 +24,7 @@
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/activity_setting"
-        android:name="com.play.view.player.videoplayer4k.SettingFragment"
+        android:name="com.play.view.videoplayer.hd.SettingFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/app_bar"></fragment>

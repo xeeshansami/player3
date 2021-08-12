@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_centerHorizontal="true"
     android:layout_height="match_parent"
-    tools:context="com.play.view.player.videoplayer4k.Details">
+    tools:context="com.play.view.videoplayer.hd.Details">
     <TextView
         android:layout_marginTop="80sp"
         android:layout_centerHorizontal="true"

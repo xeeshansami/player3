@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Player3-master.iml" filepath="$PROJECT_DIR$/.idea/modules/Player3-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Player3-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Player3-master.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/endlessrecyclerview/Player3-master.endlessrecyclerview.iml" filepath="$PROJECT_DIR$/.idea/modules/endlessrecyclerview/Player3-master.endlessrecyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/player3.iml" filepath="$PROJECT_DIR$/.idea/modules/player3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/player3.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/player3.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/endlessrecyclerview/player3.endlessrecyclerview.iml" filepath="$PROJECT_DIR$/.idea/modules/endlessrecyclerview/player3.endlessrecyclerview.iml" />
     </modules>
   </component>
 </project>

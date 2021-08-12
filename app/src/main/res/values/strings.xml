@@ -9,14 +9,14 @@
     <!--<string name="banner_ad_unit_id">ca-app-pub-7672567716424722/5074318813</string>-->
     <!--<string name="intersitial_as_unit_id">ca-app-pub-7672567716424722/9659118004</string>-->
     <!--//Dummy-->
-    <string name="banner_ad_unit_id">  ca-app-pub-3940256099942544/6300978111</string>
-    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
-    <string name="intersitial_as_unit_id">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+<!--    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+<!--    <string name="intersitial_as_unit_id">ca-app-pub-3940256099942544/1033173712</string>&ndash;&gt;-->
     <!--NoAds-->
-   <!-- <string name="app_id">ca-app-pub-1943209268021385~9982516868</string>
+    <string name="app_id">ca-app-pub-1943209268021385~9982516868</string>
     <string name="banner_ad_unit_id">ca-app-pub-1943209268021385/6294607191</string>
     <string name="intersitial_as_unit_id">ca-app-pub-1943209268021385/4405034356</string>
-   --> <string name="eq">Equalizer</string>
+    <string name="eq">Equalizer</string>
     <string name="hello_world">Hello world!</string>
     <string name="windows_like">Windows like</string>
     <string name="hangout_like">Hangout like</string>
